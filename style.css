@@ -205,9 +205,16 @@ a {
     color: var(--text-muted);
 }
 
+.contact-img {
+    display: flex;
+    justify-content: center;
+}
+
 .contact-img img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 #footer {
@@ -276,6 +283,7 @@ a {
 
     .contact-box {
         flex-direction: row;
+        height: 500px;
     }
 
     .contact-img {
@@ -290,6 +298,11 @@ a {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+    }
+
+    .col {
+        flex: 1 1 50%;
+        box-sizing: border-box;
     }
 }
 
